@@ -56,6 +56,8 @@ namespace VenoLib.ItemManagement
             _maxStackSize = maxStackSize;
             _renderer = renderer;
 
+            if (_renderer == null) return;
+
             // Methods passed along to renderer
             _renderer.GetSlotAmount = (index) => 
             { 
